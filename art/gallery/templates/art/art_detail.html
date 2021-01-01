@@ -43,10 +43,14 @@
 
 
 <div class="text-center">
-    <img src="{{ art.gallery_image.url }}" style="width: 600px; height: 600px; margin-top: 125px;">
-    <h1 class="title">{{art.image_name}}</h1>
+    {% if description.image_name %}
+    <img src="{{ description.gallery_image.url }}" style="width: 600px; height: 600px; margin-top: 125px;">
+    <h1 class="title">{{description.image_name}}</h1>
     <p class="description mx-auto" style="width: 600px; text-align: left;">
         {{description.image_description}}
     </p>
-    <button class="gallery-prev">BACK TO ART</button>
+    <a href="{% url 'art' %}">
+        <button class="gallery-prev">BACK TO ART</button>
+    </a>
+    {% endif %}
 </div>

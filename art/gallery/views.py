@@ -19,7 +19,7 @@ def contact(request):
 
 def art_detail(request, pk):
     description = get_object_or_404(Gallery, pk=pk)
-    return render(request, 'art/art_detail.html', {'pk': pk,'description': description})
+    return render(request, 'art/art_detail.html', {'description': description})
 
 
 
