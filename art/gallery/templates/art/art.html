@@ -49,8 +49,8 @@
             {% for art in gallery.all %}
             <div class="card bg-dark text-white mx-auto">
                 <!--LINK TO ART DETAIL-->
-                <a href="{% url 'art_detail' pk=art.pk %}">
-                <img class="card-img img-fluid border-0" src="{{ art.gallery_image.url }}" alt="Card image">
+                <a href="{% url 'art_detail' pk=art.image_name %}">
+                <img class="card-img img-fluid" src="{{ art.gallery_image.url }}" alt="Card image">
                 <div class="card-img-overlay">
                     <h5 class="card-title">{{art.image_name}}</h5>
                 </div>
