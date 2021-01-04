@@ -1,4 +1,5 @@
 from django.db import models
+from django import forms
 
 
 class Gallery(models.Model):
@@ -8,3 +9,8 @@ class Gallery(models.Model):
 
     class Meta:
         verbose_name_plural = "Gallery"
+
+class ContactForm(forms.Form):
+    name = models.CharField(max_length=30)
+    email = models.EmailField()
+    message = models.TextField()

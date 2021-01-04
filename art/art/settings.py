@@ -127,3 +127,10 @@ MEDIA_URL = '/media/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.ethereal.email'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'eugene.hilll@ethereal.email'
+EMAIL_HOST_PASSWORD = 'FxG7xBUmnAx9G81BXR'
