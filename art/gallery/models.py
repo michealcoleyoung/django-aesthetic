@@ -10,7 +10,7 @@ class Gallery(models.Model):
     class Meta:
         verbose_name_plural = "Gallery"
 
-class ContactForm(forms.Form):
-    name = models.CharField(max_length=30)
-    email = models.EmailField()
-    message = models.TextField()
+# class ContactForm(forms.Form):
+#     name = models.CharField(max_length=30)
+#     email = models.EmailField()
+#     message = models.TextField()

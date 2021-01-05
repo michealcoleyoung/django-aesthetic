@@ -1,8 +1,8 @@
 from django.http import HttpResponse
 from django.views.generic import ListView
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Gallery, ContactForm
-from django.core.mail import send_mail, BadHeaderError
+from .models import Gallery
+from django.core.mail import send_mail
 
 
 
@@ -16,20 +16,22 @@ def art(request):
 
 
 def contact(request):
-    if request.method == 'GET':
-        form = ContactForm()
+    if request.method == "POST":
+        name = request.POST['name']
+        email = request.POST['email']
+        message = request.POST['message']
+
+        send_mail(
+            name,
+            email,
+            message,
+            ['eugene.hilll@ethereal.email'], fail_silently=False,
+        )
+
+        return render(request, 'art/contact.html', {})
     else:
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            message = form.cleaned_data['message']
-            try:
-                send_mail(name, message, email, ['eugene.hilll@ethereal.email'])
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
-            return redirect('success')
-    return render(request, 'art/contact.html', {'form': form})
+        return render(request, 'art/contact.html', {})
+
 
 
 def art_detail(request, pk):
