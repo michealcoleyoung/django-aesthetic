@@ -1,4 +1,4 @@
-![[/images/main.png]]
+![Main Page](/images/main.png)
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -11,12 +11,12 @@ This project was created for a friend of mine back in 2020 and the purpose of th
 ## Features
 
 **Gallery**: Gallery for image upload
-![[/images/admin-gallery.png]]
-![[/images/tetsuo.png]]
-![[/images/gallery-main.png]]
+![Admin Gallery](/images/admin-gallery.png)
+![Tetsuo](/images/tetsuo.png)
+![Gallery Main](/images/gallery-main.png)
 
 **Contact:** Contact form for people to reach out to collaborate
-![[/images/contact.png]]
+![Contact](/images/contact.png)
 
 
 
