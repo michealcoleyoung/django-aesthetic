@@ -11,14 +11,12 @@
             "id": "fea45f0fd12be2d0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "images/admin-gallery.png"
               },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "lucide-image",
+              "title": "admin-gallery"
             }
           }
         ]
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "images/admin-gallery.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for admin-gallery"
             }
           },
           {
@@ -167,11 +165,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1d83689bb1fdc194",
+  "active": "fea45f0fd12be2d0",
   "lastOpenFiles": [
+    "README.md",
+    "Untitled",
     "images/contact.png",
     "images/gallery-main.png",
-    "README.md",
     "images/Pasted image 20250323164426.png",
     "images/tetsuo.png",
     "images/main.png",

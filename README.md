@@ -1,9 +1,4 @@
 ![[main.png]]
-# Django Aesthetic
-
-
-A Django app to easily 
-
 ## Table of Contents
 
 * [About the Project](#about-the-project)
